@@ -1,6 +1,5 @@
-# ppcn-mmdet
-PPCN Source Code
-This code is for the paper "An end-to-end CNN framework for polarimetric vision tasks based on polarization-parameter-constructing network"  
+# PFENet-mmdet
+PFENet Code
 1.	The code is based on mmdetection at https://github.com/open-mmlab/mmdetection. Documents provided by mmdetection can guide to understand and run our code.  
 2.	PPCN and resnet are implemented in "ppcn-mmdet\mmdet\models\backbones\polnet.py"
 3.	Our dataset is in PASCAL VOC format. Data IO files are under "ppcn-mmdet\mmdet\datasets".  
