@@ -75,20 +75,3 @@ def array_to_jpg(arr, out_path, method=0):
     cv2.imwrite(out_path, result)
     print(out_path)
 
-
-if __name__ == '__main__':
-    # model = init_detector("/home/gdgc0402/Code/mmdet-pol/configs/PolNet/faster_rcnn_pol_r50_fpn_1x_48-96-32-16-5.py",
-    #                       "/home/gdgc0402/Data/work_dirs/car-xmls/faster_rcnn_pol_r50_fpn_1x_48-96-32-16-5/epoch_200.pth",
-    #                       device='cuda:0')
-    # print(model.backbone.fusion)
-
-    # polnet_cfg = "/home/gdgc0402/Code/mmdet-pol/configs/PolNet/faster_rcnn_pol_r50_fpn_1x_48-96-32-16-5.py"
-    # polnet_pth = "/home/gdgc0402/Data/work_dirs/car-xmls/faster_rcnn_pol_r50_fpn_1x_48-96-32-16-5/epoch_200.pth"
-    # polnet_sample = "/home/gdgc0402/Data/PolData/images/d04590135_images/20200102_102624628.tiff"
-    # fusion_one_image_one_ckpoint(polnet_sample, polnet_cfg, polnet_pth, out_dir="/home/gdgc0402/")
-
-    polnet_cfg = "/home/wangyong/Code/mmdet-pol/configs/PolNet/faster_rcnn_pol_r50_fpn_1x_48-96-32-16-9.py"
-    pth_dir = "/home/wangyong/data/123"
-    polnet_sample = "/home/wangyong/data/123/input"
-    out_dir = "/home/wangyong/data/123/out/"
-    fusion_images_with_epocks(polnet_sample, polnet_cfg, pth_dir, out_dir)
